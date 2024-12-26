@@ -1,10 +1,10 @@
-terraform { 
-  cloud { 
-    
+terraform {
+  cloud {
+
     organization = "pp-org"
 
-    workspaces { 
-      name = "pp-gh-tfe" 
-    } 
-  } 
+    workspaces {
+      name = "pp-gh-tfe"
+    }
+  }
 }
