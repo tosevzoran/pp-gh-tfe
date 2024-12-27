@@ -4,7 +4,8 @@ terraform {
     organization = "pp-org"
 
     workspaces {
-      name = "pp-gh-tfe"
+      name = "pp-gh-repos"
     }
   }
 }
+
