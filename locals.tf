@@ -16,5 +16,10 @@ locals {
       project_id          = tfe_project.self["pp-gh"].id
       vcs_repo_identifier = "${var.github_organization_name}/pp-gh-repos"
     }
+    "pp-gh-do-droplets" = {
+      description         = "Workspace for managing DigitalOcean droplets"
+      project_id          = tfe_project.self["pp-gh"].id
+      vcs_repo_identifier = "${var.github_organization_name}/pp-gh-do-droplets"
+    }
   }
 }
