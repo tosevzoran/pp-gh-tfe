@@ -14,6 +14,7 @@ resource "tfe_workspace" "self" {
   name         = each.key
   organization = var.organization_name
   project_id   = each.value.project_id
+  force_delete = true
 
   # execution_mode    = each.value.execution_mode
   # variables         = try(each.value.variables, [])
