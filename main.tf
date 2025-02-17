@@ -19,8 +19,8 @@ resource "tfe_workspace" "self" {
   # execution_mode    = each.value.execution_mode
   # variables         = try(each.value.variables, [])
 
-  vcs_repo {
-    github_app_installation_id = data.tfe_github_app_installation.this.id
-    identifier                 = each.value.vcs_repo_identifier
-  }
+  # vcs_repo {
+  #   github_app_installation_id = data.tfe_github_app_installation.this.id
+  #   identifier                 = each.value.vcs_repo_identifier
+  # }
 }
